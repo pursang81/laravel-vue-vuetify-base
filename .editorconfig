@@ -11,5 +11,8 @@ trim_trailing_whitespace = true
 [*.md]
 trim_trailing_whitespace = false
 
-[*.{yml,yaml}]
+[*.{yml, yaml}]
+indent_size = 2
+
+[*.{json, scss, html, js, vue, blade.php}]
 indent_size = 2
