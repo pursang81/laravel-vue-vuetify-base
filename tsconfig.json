@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./built/",
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution": "node",
+    "module": "es2015",
+    "target": "es6",
+    "lib": ["es2016", "dom"]
+  },
+  "include": ["resources/ts/**/*"]
+}
