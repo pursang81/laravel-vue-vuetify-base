@@ -13,5 +13,14 @@ const mix = require('laravel-mix');
 
 mix.browserSync('localhost')
   .ts('resources/ts/app.ts', 'public/js')
-  .sass('resources/sass/app.scss', 'public/css')
-  .version();
+  .sass('resources/sass/app.scss', 'public/css', {
+    sassOptions: {
+      outputStyle: 'nested',
+    },
+    implementation: require('node-sass')
+  })
+  .extract(['vue', 'jquery']);
+
+if (mix.inProduction()) {
+  mix.version();
+}
